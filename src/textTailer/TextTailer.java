@@ -71,7 +71,7 @@ public class TextTailer {
 				text = new String();
 				try {
 					Scanner in = new Scanner(file);
-					text = in.useDelimiter("\\A").next();
+					text = in.useDelimiter("\n").next();
 					in.close();
 					display.setText(text);
 				} catch (IOException e) {
